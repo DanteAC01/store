@@ -1,3 +1,5 @@
+//sirve para que la imagen de ofertas se ponga al lado del scroll y baje junto con el
+//FALTA AJUSTAR
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
