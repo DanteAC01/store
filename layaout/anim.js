@@ -1,4 +1,4 @@
-//sirve para que la imagen de ofertas se ponga al lado del scroll y baje junto con el
+//sirve para que la imagen de ofertas se ponga al lado del scroll y baje junto con el//
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
@@ -14,6 +14,6 @@ function scrollFunction() {
   } else {
     img.style.position = "static";
     img.style.width = "100%";
-    
+    img.style.transform = "translateX(0%)"; // Corrige el desplazamiento horizontal
   }
 }

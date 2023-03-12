@@ -13,14 +13,14 @@
     <!-- Codigo de la barra superior -->
     <div class="cont_navbar">
       <div class="navbar">
-        <a class="active" href="#home">Inicio</a>
+        <a class="active" href="/articles/index.html">Inicio</a>
         <div class="dropdown">
           <button class="dropbtn">Opcion 1
           </button>
           <div class="dropdown-content">
-            <a href="/articles/opc1/index.html"><img src="https://ternositalianos.com/wp-content/uploads/2016/07/Terno-Italiano-Charcoal.jpg" alt=""></a>
-            <a href="#"><img src="https://ternositalianos.com/wp-content/uploads/2016/07/Terno-Italiano-Charcoal.jpg" alt=""></a>
-            <a href="#"><img src="https://ternositalianos.com/wp-content/uploads/2016/07/Terno-Italiano-Charcoal.jpg" alt=""></a>
+            <a href="/articles/opc1/opc1.html"><img src="https://ternositalianos.com/wp-content/uploads/2016/07/Terno-Italiano-Charcoal.jpg" alt=""></a>
+            <a href="/articles/opc1/opc2.html"><img src="https://ternositalianos.com/wp-content/uploads/2016/07/Terno-Italiano-Charcoal.jpg" alt=""></a>
+            <a href="/articles/opc1/opc3.html"><img src="https://ternositalianos.com/wp-content/uploads/2016/07/Terno-Italiano-Charcoal.jpg" alt=""></a>
           </div>
         </div>
         <div class="dropdown">
@@ -66,7 +66,9 @@
           <i class="fas fa-shopping-cart"></i>
         </button>
         <div class="basic_info">
-          Aqui ira la info basica
+          <table>
+            
+          </table>
         </div>
       </div>
       <div class="product">
@@ -185,7 +187,7 @@
           <img src="https://beheperu.com/wp-content/uploads/2020/09/OMEGA-PANTALON-1.png" alt="" >
         </button>
         <button class="buy">
-          <i class="fas fa-shopping-cart"></i>      
+          <i class="fas fa-shopping-cart"></i>  
         </button>
         <div class="basic_info">
           Aqui ira la info basica
@@ -198,5 +200,33 @@
       </button>
     </div>
   </div>
+  <div id="mi-modal" class="modal">
+    <div class="modal-contenido">
+      <span class="cerrar">&times;</span>
+      <p>Contenido del modal</p>
+    </div>
+  </div>
+  
+<!-- MEJORAR ESTA PARTE PARA PODER CAMBIAR LOS BOTONES DE ARTICULOS-->
+
+  <script>
+   // codigo para el modal //
+  function mostrarModal(idModal) {
+    var modal = document.getElementById(idModal);
+    modal.style.display = "block";
+  }
+  
+  function ocultarModal(idModal) {
+    var modal = document.getElementById(idModal);
+    modal.style.display = "none";
+  }
+  
+  // Agregar un evento de clic al botón "cerrar" dentro del modal
+  var cerrar = document.getElementsByClassName("cerrar")[0];
+  cerrar.onclick = function() {
+    ocultarModal("mi-modal");
+  }
+  </script>
+  <button onclick="mostrarModal('mi-modal')">Ver más</button>
  </body>
 </html>
