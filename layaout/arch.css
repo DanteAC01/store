@@ -108,6 +108,7 @@
     margin-left: 5em; /* em => 16 px en algunos navegadores, servira para hacer responsive*/
   }
   .product button{
+    display: flex;
     border-radius: 15%;
     border-color: black;
     background-color:white;
@@ -148,14 +149,15 @@
   }
   /* Estilo para el icono buy */
   .buy {
-    display: block;
+    display: inline-flex;
     float: inline-end;
+    margin-top:8px;
   }
   /* Estilo para basic_info */
   .basic_info{
     display: flex;
-    flex-wrap: wrap;
-  justify-content: space-between;
+    justify-content: space-between;
+    margin-top: 8px;
   }
 
   /* AJUSTES PARA EL MODAL (BASICO) */
